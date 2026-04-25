@@ -1,4 +1,5 @@
 📚 Descrição
+
 Este projeto consiste no desenvolvimento de um website moderno e responsivo para um restaurante de culinária mexicana. O objetivo é oferecer uma experiência digital imersiva que reflita a cultura vibrante do México, permitindo que os clientes visualizem o cardápio, conheçam a história do local e realizem reservas online.
 
 🚀 Funcionalidades
