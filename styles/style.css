@@ -15,7 +15,11 @@ body{
 header{
     width: 100%;
     padding: 10px 0; /* Tavlez tirar */
-    background-color: #7b3306;
+    /* background-color: #7b3306; */
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header .interface{
@@ -67,5 +71,60 @@ header .menu-desktop .reservation-btn a button{
 }
 
 header .menu-desktop .reservation-btn a button:hover{
+    background-color: #c5000a;
+}
+
+/* Estilo seção hero */
+.hero{
+    height: 100vh;
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .interface{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero .txt-hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero .txt-hero h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 800;
+}
+
+.hero .txt-hero p{
+    font-size: 1.5em;
+    line-height: 0px;
+}
+
+.hero .txt-hero p span{
+    display: block;
+}
+
+.hero .txt-hero a button{
+    padding: 15px 30px;
+    background-color: #e7000b;
+    border: none;
+    margin-top: 1em;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: .4s;
+}
+
+.hero .txt-hero a button:hover{
     background-color: #c5000a;
 }
