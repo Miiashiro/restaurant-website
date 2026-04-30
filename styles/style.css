@@ -56,12 +56,17 @@ body {
 header {
     width: 100%;
     padding: 10px 0;
-    /* Tavlez tirar */
-    /* background-color: #7b3306; */
     background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
+    transition: .5s;
+    z-index: 5;
+}
+
+.scroll{
+    background-color: #7b3306;
+    box-shadow: 0 0 8px #00000063;
 }
 
 header .interface {
@@ -81,7 +86,7 @@ header .menu-desktop nav ul {
 
 header .menu-desktop nav ul li {
     display: inline-block;
-    margin: 0 20px
+    margin: 0 10px
 }
 
 header .menu-desktop nav ul li a {
