@@ -335,7 +335,7 @@ header .menu-desktop .reservation-btn a button:hover {
 
 /* Estilo da seção restaurante */
 .restaurant {
-    height: 600px;
+    height: 650px;
 
     background-image: url(../images/restaurante.jpg);
     background-position: center;
@@ -358,32 +358,36 @@ header .menu-desktop .reservation-btn a button:hover {
 
 .restaurant h2 {
     font-size: 2.5em;
-    color: #ff7723;
+    color: #fff;
 }
 
 .restaurant h2 span {
     display: block;
     line-height: 50px;
+    color: #e7000b;
 }
 
 .restaurant p {
-    color: #ff995a;
+    color: #ffffffcc;
     font-size: 1.1em;
     line-height: 60px;
 }
 
 .restaurant a button {
-    border: 1px solid #ff995a;
+    border: 2px solid #e7000b;
     background-color: transparent;
     color: #fff;
-    padding: 20px;
-    font-size: 1.3em;
-    transition: .5s;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
     cursor: pointer;
+    transition: 0.4s ease;
 }
 
 .restaurant a button:hover {
-    background-color: #ff995a;
+   background-color: #e7000b;
+    color: #fff;
+    transform: scale(1.05);
 }
 
 .restaurant .overlay {
@@ -392,7 +396,7 @@ header .menu-desktop .reservation-btn a button:hover {
     top: 0;
     left: 0;
     position: absolute;
-    background-color: #000000b9;
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
