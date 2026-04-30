@@ -1,42 +1,62 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background-color: #fffbeb;
 }
 
-.interface{
+.interface {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 4%;
 }
 
 /* Estilos globais */
-.title-about, .title-menu{
+.title-about,
+.title-menu,
+.title-visit {
     width: 100%;
     display: grid;
     justify-content: center;
 }
 
-.title-about h2, .title-menu h2{
+.title-about h2,
+.title-menu h2,
+.title-visit h2 {
     font-size: 2.5em;
     color: #7f390c;
 }
 
-.title-about .red-line, .title-menu .red-line{
+.title-about .red-line,
+.title-menu .red-line,
+.title-visit .red-line {
     width: 100%;
     height: 4px;
     background-color: #e7000b;
 }
 
+.our-menu p,
+.reservation p {
+    font-size: 1.2em;
+    line-height: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.our-menu p span,
+.reservation p span {
+    display: block;
+}
+
 /* Cabeçalho */
-header{
+header {
     width: 100%;
-    padding: 10px 0; /* Tavlez tirar */
+    padding: 10px 0;
+    /* Tavlez tirar */
     /* background-color: #7b3306; */
     background-color: transparent;
     position: fixed;
@@ -44,43 +64,43 @@ header{
     left: 0;
 }
 
-header .interface{
+header .interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .menu-desktop{
+header .menu-desktop {
     display: flex;
     align-items: center;
 }
 
-header .menu-desktop nav ul{
+header .menu-desktop nav ul {
     list-style: none;
 }
 
-header .menu-desktop nav ul li{
+header .menu-desktop nav ul li {
     display: inline-block;
     margin: 0 20px
 }
 
-header .menu-desktop nav ul li a{
+header .menu-desktop nav ul li a {
     text-decoration: none;
-    color:  #fff;
+    color: #fff;
     font-weight: bold;
     display: inline-block;
     transition: .3s;
 }
 
-header .menu-desktop nav ul li a:hover{
+header .menu-desktop nav ul li a:hover {
     transform: scale(1.05);
 }
 
-header .menu-desktop .reservation-btn{
+header .menu-desktop .reservation-btn {
     margin: 0 10px;
 }
 
-header .menu-desktop .reservation-btn a button{
+header .menu-desktop .reservation-btn a button {
     padding: 10px 25px;
     background-color: #e7000b;
     border: none;
@@ -92,12 +112,12 @@ header .menu-desktop .reservation-btn a button{
     transition: .4s;
 }
 
-header .menu-desktop .reservation-btn a button:hover{
+header .menu-desktop .reservation-btn a button:hover {
     background-color: #c5000a;
 }
 
 /* Estilo seção hero */
-.hero{
+.hero {
     height: 100vh;
     background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
@@ -105,7 +125,7 @@ header .menu-desktop .reservation-btn a button:hover{
     background-position: center;
 }
 
-.hero .interface{
+.hero .interface {
     height: 100%;
     display: flex;
     align-items: center;
@@ -113,28 +133,28 @@ header .menu-desktop .reservation-btn a button:hover{
     color: #fff;
 }
 
-.hero .txt-hero{
+.hero .txt-hero {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.hero .txt-hero h1{
+.hero .txt-hero h1 {
     font-size: 4em;
     line-height: 120px;
     font-weight: 800;
 }
 
-.hero .txt-hero p{
+.hero .txt-hero p {
     font-size: 1.5em;
     line-height: 30px;
 }
 
-.hero .txt-hero p span{
+.hero .txt-hero p span {
     display: block;
 }
 
-.hero .txt-hero a button{
+.hero .txt-hero a button {
     padding: 15px 30px;
     background-color: #e7000b;
     border: none;
@@ -147,26 +167,26 @@ header .menu-desktop .reservation-btn a button:hover{
     transition: .4s;
 }
 
-.hero .txt-hero a button:hover{
+.hero .txt-hero a button:hover {
     background-color: #c5000a;
 }
 
 /* Estilo seção about */
-.about .interface{
+.about .interface {
     padding: 3rem 0;
 }
 
-.about .history-container{
+.about .history-container {
     display: flex;
     margin-top: 40px;
 }
 
-.about .history-container .txt-history{
+.about .history-container .txt-history {
     width: 50%;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
     font-size: 1.2em;
     line-height: 30px;
     position: sticky;
@@ -174,7 +194,7 @@ header .menu-desktop .reservation-btn a button:hover{
     top: 100px;
 }
 
-.about .history-container .detail-items{
+.about .history-container .detail-items {
     width: 50%;
     padding: 0 20px;
     display: flex;
@@ -182,7 +202,7 @@ header .menu-desktop .reservation-btn a button:hover{
     gap: 40px;
 }
 
-.history-container .detail-items .item-container{
+.history-container .detail-items .item-container {
     background-color: #fff;
     padding: 30px;
     display: flex;
@@ -190,54 +210,43 @@ header .menu-desktop .reservation-btn a button:hover{
     border-radius: 10px;
 }
 
-.item-container .icon-about{
+.item-container .icon-about {
     display: flex;
     align-items: center;
     margin: 0 30px 0 10px;
 }
 
-.item-container .icon-about i{
+.item-container .icon-about i {
     font-size: 4em;
     color: #e7000b;
 }
 
-.item-container .txt-card h3{
+.item-container .txt-card h3 {
     font-size: 1.5em;
     color: #8c3e0d;
     margin-bottom: 0.8em;
 }
 
-.item-container .txt-card p{
+.item-container .txt-card p {
     font-size: 1.1em;
     color: #555;
     line-height: 30px;
 }
 
-.item-container .txt-card p span{
+.item-container .txt-card p span {
     display: block;
 }
 
 /* Estilo seção our-menu */
-.our-menu{
+.our-menu {
     background-color: #fff;
 }
 
-.our-menu .interface{
+.our-menu .interface {
     padding: 3rem 0;
 }
 
-.our-menu p{
-    font-size: 1.2em;
-    line-height: 30px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.our-menu p span{
-    display: block;
-}
-
-.our-menu .food-container{
+.our-menu .food-container {
     margin-top: 40px;
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
@@ -245,38 +254,39 @@ header .menu-desktop .reservation-btn a button:hover{
     gap: 30px;
 }
 
-.our-menu .food-container .food-card{
+.our-menu .food-container .food-card {
     background-color: #fff;
     border-radius: 0 0 15px 15px;
     display: flex;
     flex-direction: column;
-    
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    ;
     transition: all 0.5s ease;
 }
 
-.our-menu .food-container .food-card:hover{
+.our-menu .food-container .food-card:hover {
     transform: scale(1.04);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
-.food-card .img-food{
+.food-card .img-food {
     height: 350px;
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
     object-fit: cover;
 }
 
-.food-card .img-food img{
+.food-card .img-food img {
     width: 100%;
     height: 100%;
 }
 
-.food-card .txt-food{
+.food-card .txt-food {
     padding: 25px;
 }
 
-.food-card .txt-food .info{
+.food-card .txt-food .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -284,29 +294,29 @@ header .menu-desktop .reservation-btn a button:hover{
     font-size: 1.4em;
 }
 
-.txt-food .info .food-name{
+.txt-food .info .food-name {
     color: #8c3e0d;
     font-weight: bold;
 }
 
-.txt-food .info .food-price{
-    color:#e7000b;
+.txt-food .info .food-price {
+    color: #e7000b;
 }
 
-.food-card .txt-food .description{
+.food-card .txt-food .description {
     font-size: 1.1em;
     line-height: 30px;
     color: #555;
 }
 
-.our-menu .menu-wrapper{
+.our-menu .menu-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 3.5em;
 }
 
-.our-menu .menu-wrapper a button{
+.our-menu .menu-wrapper a button {
     padding: 15px 30px;
     background-color: #e7000b;
     border: none;
@@ -318,16 +328,16 @@ header .menu-desktop .reservation-btn a button:hover{
     transition: .4s;
 }
 
-.our-menu .menu-wrapper a button:hover{
+.our-menu .menu-wrapper a button:hover {
     background-color: #c5000a;
     transform: scale(1.02);
 }
 
 /* Estilo da seção restaurante */
-.restaurant{
+.restaurant {
     height: 600px;
 
-    background-image: url(../images/restaurant.jpeg);
+    background-image: url(../images/restaurante.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -336,7 +346,7 @@ header .menu-desktop .reservation-btn a button:hover{
     position: relative;
 }
 
-.restaurant .interface{
+.restaurant .interface {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -346,23 +356,23 @@ header .menu-desktop .reservation-btn a button:hover{
     position: relative;
 }
 
-.restaurant h2{
+.restaurant h2 {
     font-size: 2.5em;
     color: #ff7723;
 }
 
-.restaurant h2 span{
+.restaurant h2 span {
     display: block;
     line-height: 50px;
 }
 
-.restaurant p{
+.restaurant p {
     color: #ff995a;
     font-size: 1.1em;
     line-height: 60px;
 }
 
-.restaurant a button{
+.restaurant a button {
     border: 1px solid #ff995a;
     background-color: transparent;
     color: #fff;
@@ -372,11 +382,11 @@ header .menu-desktop .reservation-btn a button:hover{
     cursor: pointer;
 }
 
-.restaurant a button:hover{
+.restaurant a button:hover {
     background-color: #ff995a;
 }
 
-.restaurant .overlay{
+.restaurant .overlay {
     width: 100%;
     height: 100%;
     top: 0;
@@ -384,4 +394,128 @@ header .menu-desktop .reservation-btn a button:hover{
     position: absolute;
     background-color: #000000b9;
     z-index: 1;
+}
+
+/* Estilo da seção de reservar mesa */
+.reservation .interface {
+    padding: 3rem 0;
+}
+
+.reservation .reservation-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+.reservation-container .social-media {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.reservation-container .social-media article {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px 20px;
+    height: auto;
+}
+
+.social-media article .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon-wrapper .icon-social {
+    background-color: #e7000b;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.icon-wrapper .icon-social i {
+    color: #fff;
+    font-size: 3em;
+}
+
+.social-media article h3 {
+    font-size: 1.8em;
+    color: #8c3e0d;
+    margin-bottom: 0.8em;
+}
+
+.social-media article p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.1;
+
+}
+
+.reservation-container .form-reservation {
+    width: 50%;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.reservation-container .form-reservation .title-form {
+    font-size: 1.8em;
+    color: #8c3e0d;
+    font-weight: bold;
+}
+
+.reservation-container .form-reservation form {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-reservation form label {
+    font-size: 1.1em;
+}
+
+form .date-time-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .date-time-wrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 48%;
+}
+
+.form-reservation form input,
+.form-reservation form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.form-reservation form input:focus,
+.form-reservation form textarea:focus {
+    outline: #e7000b solid 2px;
+}
+
+.form-reservation form button {
+    padding: 15px;
+    background-color: #e7000b;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.form-reservation form button:hover {
+    background-color: #c5000a;
 }
