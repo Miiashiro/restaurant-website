@@ -340,7 +340,7 @@ header .menu-desktop .reservation-btn a button:hover {
 
 /* Estilo da seção restaurante */
 .restaurant {
-    height: 650px;
+    height: 640px;
 
     background-image: url(../images/restaurante.jpg);
     background-position: center;
