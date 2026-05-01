@@ -528,3 +528,128 @@ form .date-time-wrapper div {
 .form-reservation form button:hover {
     background-color: #c5000a;
 }
+
+/* Footer */
+footer{
+    background-color: #7b3306;
+}
+
+footer .interface {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer article .logo-footer-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+article .logo-footer-wrapper .logo-footer{
+    width: 50px;
+    height: 50px;
+    background-color: #e17100;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer-wrapper .logo-footer img{
+    width: 30px;
+}
+
+article .logo-footer-wrapper .txt-logo-footer{
+    margin-left: 10px;
+}
+
+.txt-logo-footer .restaurant-name{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.txt-logo-footer .year-founded{
+    color: #ffe83b;
+    font-size: 0.8em;
+}
+
+article .description-footer{
+    color: #ffe3c8;
+    font-size: 0.9em;
+}
+
+article .title-footer p{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+article .links-footer ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+article .links-footer ul li{
+    margin-bottom: 10px;
+}
+
+.links-footer ul li a{
+    text-decoration: none;
+    color: #ffe3c8;
+    font-size: 1em;
+    transition: .3s;
+}
+
+.links-footer ul li a:hover{
+    color: #fff;
+}
+
+.time-footer{
+    margin-top: 20px;
+}
+
+.time-footer p{
+    color: #ffe3c8;
+    font-size: 1em;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+.time-footer p span{
+    display: block;
+}
+
+.social-footer{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-footer .icon-social-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #bb4d00;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.social-footer .icon-social-footer:hover{
+    background-color: #e15e00;
+}
+
+.social-footer .icon-social-footer i{
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+.txt-social-footer{
+    color: #ffe3c8;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
