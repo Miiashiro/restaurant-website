@@ -9,6 +9,10 @@ body {
     background-color: #fffbeb;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .interface {
     max-width: 1240px;
     margin: 0 auto;
@@ -124,7 +128,7 @@ header .menu-desktop .reservation-btn a button:hover {
 /* Estilo seção hero */
 .hero {
     height: 100vh;
-    background-image: url(../images/hero.jpg);
+    background-image: url(../images/about/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -177,6 +181,10 @@ header .menu-desktop .reservation-btn a button:hover {
 }
 
 /* Estilo seção about */
+.about{
+    scroll-margin-top: 80px;
+}
+
 .about .interface {
     padding: 3rem 0;
 }
@@ -342,13 +350,14 @@ header .menu-desktop .reservation-btn a button:hover {
 .restaurant {
     height: 640px;
 
-    background-image: url(../images/restaurante.jpg);
+    background-image: url(../images/about/restaurante.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     position: relative;
+    scroll-margin-top: 88px;
 }
 
 .restaurant .interface {
@@ -406,6 +415,10 @@ header .menu-desktop .reservation-btn a button:hover {
 }
 
 /* Estilo da seção de reservar mesa */
+.reservation{
+    scroll-margin-top: 80px;
+}
+
 .reservation .interface {
     padding: 3rem 0;
 }

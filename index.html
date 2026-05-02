@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La Cantina del Sol</title>
+    <link rel="icon" href="./images/about/small_icon.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -16,22 +17,22 @@
     <header id="header">
         <div class="interface">
             <section class="logo">
-                <img src="./images/logo.png" alt="">
+                <img src="./images/about/logo.png" alt="logo">
             </section>
 
             <section class="menu-desktop">
                 <nav>
                     <ul>
                         <li><a href="#">Início</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Cardápio</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="./menu.html">Cardápio</a></li>
+                        <li><a href="#restaurant">Galeria</a></li>
+                        <li><a href="#reservation">Contato</a></li>
                     </ul>
                 </nav>
 
                 <div class="reservation-btn">
-                    <a href="#">
+                    <a href="#reservation">
                         <button>Reservar Mesa</button>
                     </a>
                 </div>
@@ -55,7 +56,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="interface">
             <div class="title-about">
                 <h2>
@@ -133,7 +134,7 @@
             <div class="food-container">
                 <article class="food-card">
                     <div class="img-food">
-                        <img src="./images/tacos_al_pastor.jpg" alt="Tacos al Pastor">
+                        <img src="./images/food/tacos_al_pastor.jpg" alt="Tacos al Pastor">
                     </div>
 
                     <div class="txt-food">
@@ -150,7 +151,7 @@
 
                 <article class="food-card">
                     <div class="img-food">
-                        <img src="./images/burrito_supremo.jpg" alt="Burrito Supremo">
+                        <img src="./images/food/burrito_supremo.jpg" alt="Burrito Supremo">
                     </div>
 
                     <div class="txt-food">
@@ -167,7 +168,7 @@
 
                 <article class="food-card">
                     <div class="img-food">
-                        <img src="./images/quesadilla.jpg" alt="Quesadilla">
+                        <img src="./images/food/quesadilla.jpg" alt="Quesadilla">
                     </div>
 
                     <div class="txt-food">
@@ -184,7 +185,7 @@
 
                 <article class="food-card">
                     <div class="img-food">
-                        <img src="./images/enchilada.jpg" alt="Enchiladas">
+                        <img src="./images/food/enchilada.jpg" alt="Enchiladas">
                     </div>
 
                     <div class="txt-food">
@@ -200,7 +201,7 @@
                 </article>
                 <article class="food-card">
                     <div class="img-food">
-                        <img src="./images/nachos.webp" alt="nachos">
+                        <img src="./images/food/nachos.webp" alt="nachos">
                     </div>
 
                     <div class="txt-food">
@@ -215,7 +216,7 @@
                 </article>
                 <article class="food-card">
                     <div class="img-food">
-                        <img src="./images/sour_cream.jpg" alt="creme azedo">
+                        <img src="./images/food/sour_cream.jpg" alt="creme azedo">
                     </div>
 
                     <div class="txt-food">
@@ -231,14 +232,14 @@
             </div>
 
             <div class="menu-wrapper">
-                <a href="#">
+                <a href="./menu.html">
                     <button class="teste">Ver Cardápio</button>
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="restaurant">
+    <section class="restaurant" id="restaurant">
         <div class="interface">
             <h2>Lugar confortável? <span>Deixa com a gente</span></h2>
             <p>Além da ótima comida oferecemos um lugar íncrivel para você e sua família</p>
@@ -250,7 +251,7 @@
         <div class="overlay"></div>
     </section>
 
-    <section class="reservation">
+    <section class="reservation" id="reservation">
         <div class="interface">
             <div class="title-visit">
                 <h2>Visite-nos</h2>
@@ -350,7 +351,7 @@
             <article>
                 <div class="logo-footer-wrapper">
                     <div class="logo-footer">
-                        <img src="./images/logo.png" alt="logo do restaurante ">
+                        <img src="./images/about/logo.png" alt="logo do restaurante ">
                     </div>
                     <div class="txt-logo-footer">
                         <p class="restaurant-name">La cantina del Sol</p>
